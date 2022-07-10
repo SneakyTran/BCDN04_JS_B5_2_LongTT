@@ -1,0 +1,9 @@
+.card--flex {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 16px;
+}
+
+.active {
+    display: block !important;
+}

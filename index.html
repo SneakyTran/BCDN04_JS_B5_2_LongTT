@@ -8,6 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
@@ -39,6 +40,39 @@
                 </div>
             </div>
         </div>
+        <div class="w-60 mt-5">
+            <div class="card">
+                <div class="card-header text-center">
+                    <h4>TÍNH TIỀN CÁP</h4>
+                </div>
+                <div class="card-body">
+                    <form>
+                        <div class="card--flex">
+                            <select class="w-50" id="selectCusType">
+                                <option value="X">Chọn loại khách hàng</option>
+                                <option value="N">Nhà Dân</option>
+                                <option value="D">Doanh Nghiệp</option>
+                            </select>
+                            <input id="ipCustomerId" placeholder="Nhập mã khách hàng" type="text"
+                                class="form-control w-50">
+                        </div>
+                        <div class="form-group">
+                            <label>Số kênh cao cấp</label>
+                            <input id="ipNumHighClassLink" placeholder="0" type="number" class="form-control">
+                        </div>
+                        <div class="form-group d-none" id="hideDiv">
+                            <label>Số kết nối</label>
+                            <input id="ipNumberConnector" placeholder="0" type="number" class="form-control">
+                        </div>
+                        <button id="btnCalc" class="btn btn-success" type="button">Tính tiền cáp</button>
+                    </form>
+                </div>
+                <div class="card-footer">
+                    <p id="txtTotalBill"></p>
+                </div>
+            </div>
+        </div>
+
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
